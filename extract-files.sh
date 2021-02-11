@@ -60,6 +60,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+<<<<<<< HEAD
         system_ext/etc/init/dpmd.rc)
             sed -i "s|/system/product/bin/|/system/system_ext/bin/|g" "${2}"
             ;;
@@ -75,7 +76,9 @@ function blob_fixup() {
             sed -i 's|/product/framework/qcrilhook.jar|/system_ext/framework/qcrilhook.jar|g' "${2}"
             ;;
         system_ext/lib64/libdpmframework.so)
-            "${PATCHELF}" --add-needed "libshim_dpmframework.so" "${2}"
+            for LIBSHIM_DPMFRAMEWORK in $(grep -L "libshim_dpmframework.so" "${2}"); do
+                "${PATCHELF}" --add-needed "libshim_dpmframework.so" "$LIBSHIM_DPMFRAMEWORK"
+            done
             ;;
         vendor/usr/keylayout/uinput-fpc.kl|vendor/usr/keylayout/uinput-goodix.kl)
             sed -i '11d' "${2}"
