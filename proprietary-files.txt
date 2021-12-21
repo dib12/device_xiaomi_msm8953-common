@@ -386,6 +386,12 @@ product/lib64/vendor.qti.latency@2.0.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
+# Keylayout
+usr/keylayout/gpio-keys.kl:vendor/usr/keylayout/gpio-keys.kl
+usr/keylayout/synaptics_dsx_v21.kl:vendor/usr/keylayout/synaptics_dsx_v21.kl
+usr/keylayout/uinput-fpc.kl:vendor/usr/keylayout/uinput-fpc.kl
+usr/keylayout/uinput-goodix.kl:vendor/usr/keylayout/uinput-goodix.kl
+
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8953.so
 vendor/lib/libadpcmdec.so
