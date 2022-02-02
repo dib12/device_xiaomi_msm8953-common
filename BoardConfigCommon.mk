@@ -80,7 +80,6 @@ TARGET_TS_MAKEUP := true
 TARGET_USES_ION := true
 TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
-OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # FM
 BOARD_HAVE_QCOM_FM := true
