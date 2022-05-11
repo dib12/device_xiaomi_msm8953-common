@@ -304,8 +304,7 @@ case "$target" in
                 #if the kernel version >=4.9,use the schedutil governor
                 #governor settings
                 echo "schedutil" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-                echo 0 > /sys/devices/system/cpu/cpufreq/schedutil/up_rate_limit_us
-                echo 0 > /sys/devices/system/cpu/cpufreq/schedutil/down_rate_limit_us
+                echo 0 > /sys/devices/system/cpu/cpufreq/schedutil/rate_limit_us
                 #set the hispeed_freq
                 echo 1401600 > /sys/devices/system/cpu/cpufreq/schedutil/hispeed_freq
                 #default value for hispeed_load is 90, for 8953 and sdm450 it should be 85
