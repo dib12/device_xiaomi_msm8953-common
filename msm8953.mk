@@ -113,7 +113,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    Snap
+    CameraPrebuilt
 
 # Display
 PRODUCT_PACKAGES += \
