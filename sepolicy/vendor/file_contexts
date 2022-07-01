@@ -27,3 +27,6 @@
 
 # Ir
 /dev/peel_ir					u:object_r:peel_device:s0
+
+# Powerhal_stats
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock          u:object_r:hal_power_stats_default_exec:s0
