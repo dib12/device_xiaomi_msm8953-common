@@ -60,7 +60,6 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-<<<<<<< HEAD
         system_ext/etc/init/dpmd.rc)
             sed -i "s|/system/product/bin/|/system/system_ext/bin/|g" "${2}"
             ;;
