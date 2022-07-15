@@ -155,6 +155,11 @@
         <fqname>@1.0::IDisplayPostproc/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.dolby.hardware.dms</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IDms/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.goodix.hardware.fingerprint</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IGoodixBiometricsFingerprint/default</fqname>

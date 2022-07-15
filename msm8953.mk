@@ -139,6 +139,9 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml
 
+# Dolby
+$(call inherit-product, vendor/Dolby/Dolby-vendor.mk)
+
 # DPM
 PRODUCT_PACKAGES += \
     libshim_dpmframework
