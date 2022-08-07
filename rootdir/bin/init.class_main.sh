@@ -33,4 +33,3 @@
 start vendor.qcrild
 start vendor.qcrild2
 start vendor.dataqti
-start vendor.dataadpl
