@@ -75,10 +75,10 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt
             "${KANG}" --section "${SECTION}"
 fi
 
-if [ "$DEVICE" = "mido" ]; then
-    # Hax for cam configs
-    CAMERA2_SENSOR_MODULES="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
-    sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "$CAMERA2_SENSOR_MODULES"
-fi
+DEVICE_BLOB_ROOT="${LINEAGE_ROOT}"/vendor/"${VENDOR}"/"${DEVICE_COMMON}"/proprietary
+
+# Keylayout
+sed -i '11d' "${DEVICE_BLOB_ROOT}"/vendor/usr/keylayout/uinput-fpc.kl
+sed -i '11d' "${DEVICE_BLOB_ROOT}"/vendor/usr/keylayout/uinput-goodix.kl
 
 "$MY_DIR"/setup-makefiles.sh
