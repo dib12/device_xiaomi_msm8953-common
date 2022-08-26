@@ -139,9 +139,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdisplayconfig \
-    liboverlay \
     libqdMetaData.system \
-    libgenlock \
     libtinyxml
 
 # DPM
@@ -338,11 +336,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     libcld80211 \
-    libQWiFiSoftApCfg \
     libwifi-hal-ctrl \
     libwpa_client \
     hostapd \
-    dhcpcd.conf \
     wificond \
     WifiOverlay \
     wpa_supplicant \
