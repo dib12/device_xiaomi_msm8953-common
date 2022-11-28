@@ -125,7 +125,6 @@ PRODUCT_PACKAGES += \
     gralloc.msm8953
 
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
     hwcomposer.msm8953
 
@@ -254,7 +253,6 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
@@ -309,7 +307,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     android.hardware.secure_element@1.1.vendor \
     librmnetctl \
-    libcnefeatureconfig \
     libxml2
 
 # Sensors
