@@ -80,6 +80,12 @@ function blob_fixup() {
         system_ext/lib64/lib-imsvideocodec.so)
             grep -q "libgui_shim.so" "${2}" || "${PATCHELF}" --add-needed "libgui_shim.so" "${2}"
             ;;
+        vendor/etc/init/qcrild.rc)
+            sed -i '4d;11d' "${2}"
+            ;;
+        vendor/etc/init/dataqti.rc)
+            sed -i '19d' "${2}"
+            ;;
         vendor/usr/keylayout/uinput-fpc.kl|vendor/usr/keylayout/uinput-goodix.kl)
             sed -i '11d' "${2}"
             ;;
