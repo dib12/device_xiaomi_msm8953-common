@@ -297,14 +297,7 @@ on property:sys.boot_completed=1
     # This initializes vendor.qti.hardware.perf service
     setprop vendor.post_boot.parsed 1
 
-service qcom-c_main-sh /vendor/bin/init.class_main.sh
-    class main
-    user root
-    group root system
-    oneshot
-
 on property:vold.decrypt=trigger_restart_framework
-    start qcom-c_main-sh
     start wcnss-service
 
 on property:ro.vendor.iocgrp.config=1
