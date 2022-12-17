@@ -7,6 +7,7 @@ audio.offload.min.duration.secs=30
 audio.offload.video=true
 persist.vendor.audio.hw.binder.size_kbyte=1024
 persist.vendor.audio.speaker.prot.enable=false
+ro.af.client_heap_size_kbyte=7168
 ro.audio.soundfx.dirac=true
 ro.config.media_vol_steps=30
 ro.config.vc_call_vol_steps=6
