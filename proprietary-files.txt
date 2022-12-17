@@ -426,6 +426,7 @@ etc/sysconfig/qti_whitelist.xml
 vendor/bin/irsc_util
 vendor/etc/sec_config
 vendor/lib/libdiag.so
+vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
 vendor/lib/libmdmdetect.so
