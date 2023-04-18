@@ -115,7 +115,7 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor
 
 PRODUCT_PACKAGES += \
-    Snap
+    GrapheneCamera
 
 # Display
 PRODUCT_PACKAGES += \
