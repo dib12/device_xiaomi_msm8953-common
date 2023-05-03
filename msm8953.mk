@@ -97,6 +97,7 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
     libvolumelistener \
+    libtinycompress
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -304,7 +305,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk-sp
+    vndk_package
 
 # Thermal
 PRODUCT_PACKAGES += \
