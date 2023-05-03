@@ -661,6 +661,7 @@ etc/wfdconfig.xml
 etc/wfdconfigsink.xml
 -framework/WfdCommon.jar
 lib/extractors/libmmparserextractor.so
+lib/com.qualcomm.qti.wifidisplayhal@1.0.so:vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/libFileMux.so
 lib/libOmxMux.so
@@ -692,7 +693,6 @@ lib64/libwfdnative.so
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
 vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
-vendor/lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 vendor/lib/libwfdcommonutils_proprietary.so
 vendor/lib/libwfdhaldsmanager.so
 vendor/lib/libwfdhdcpcp.so
