@@ -309,6 +309,14 @@ vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/vendor.qti.gnss@3.0-service.so
 vendor/lib64/vendor.qti.gnss@3.0.so
 
+# GPS configs
+vendor/etc/flp.conf
+vendor/etc/gps.conf
+vendor/etc/izat.conf
+vendor/etc/lowi.conf
+vendor/etc/sap.conf
+vendor/etc/xtwifi.conf
+
 # Graphics
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so
 lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so
@@ -380,6 +388,12 @@ vendor/firmware/a530_pm4.fw
 # Ipacm
 vendor/bin/ipacm-diag
 
+# Keylayout
+usr/keylayout/gpio-keys.kl:vendor/usr/keylayout/gpio-keys.kl
+usr/keylayout/synaptics_dsx_v21.kl:vendor/usr/keylayout/synaptics_dsx_v21.kl
+usr/keylayout/uinput-fpc.kl:vendor/usr/keylayout/uinput-fpc.kl
+usr/keylayout/uinput-goodix.kl:vendor/usr/keylayout/uinput-goodix.kl
+
 # Keystore
 vendor/lib/hw/keystore.msm8953.so
 vendor/lib64/hw/keystore.msm8953.so
@@ -411,6 +425,7 @@ vendor/lib64/liblistenjni.so
 vendor/lib64/liblistensoundmodel2.so
 
 # Media
+vendor/etc/seccomp_policy/mediacodec.policy
 vendor/lib/libI420colorconvert.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxAlacDec.so
@@ -457,6 +472,7 @@ vendor/etc/perf/perfboostsconfig.xml
 vendor/etc/perf/perfconfigstore.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
+vendor/etc/msm_irqbalance.conf
 vendor/lib/libperfconfig.so
 vendor/lib/libperfgluelayer.so
 vendor/lib/libqti-perfd-client.so
@@ -506,9 +522,13 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 -sbin/charger:bin/chargeonlymode
 
 # QMI
+etc/permissions/privapp-permissions-qti.xml
 etc/permissions/qti_libpermissions.xml
 etc/permissions/qti_permissions.xml
+etc/sysconfig/qti_whitelist.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 vendor/bin/irsc_util
+vendor/etc/sec_config
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
@@ -547,6 +567,7 @@ vendor/lib64/libqmiservices.so
 -product/app/embms/embms.apk
 product/etc/permissions/embms.xml
 product/etc/permissions/qcrilhook.xml
+product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 product/etc/permissions/telephonyservice.xml
 product/framework/QtiTelephonyServicelibrary.jar
 product/framework/embmslibrary.jar
@@ -695,6 +716,7 @@ vendor/lib64/vendor.qti.imsrtpservice@2.1.so
 
 # Sensors
 vendor/bin/sensors.qti
+vendor/etc/sensors/hals.conf
 vendor/lib/hw/activity_recognition.msm8953.so
 vendor/lib/libsensor1.so
 vendor/lib/libsensor_reg.so
