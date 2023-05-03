@@ -80,19 +80,23 @@ PRODUCT_PACKAGES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
-    android.hardware.audio@2.0-service \
     android.hardware.audio.effect@5.0-impl \
+    android.hardware.audio@2.0-service \
     android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.soundtrigger@2.1-impl \
+    android.hardware.soundtrigger@2.1-impl
+
+PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.primary.msm8953 \
     audio.r_submix.default \
-    audio.usb.default \
+    audio.usb.default
+
+PRODUCT_PACKAGES += \
+    libaudiopreprocessing \
     libaudioroute \
     libaacwrapper \
     libaudio-resampler \
-    libaudiopreprocessing \
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcompostprocbundle \
@@ -130,14 +134,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.mapper@2.0-impl-2.1 \
+    gralloc.msm8953
+
+PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-impl \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
+    hwcomposer.msm8953
+
+PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
-    gralloc.msm8953 \
-    hwcomposer.msm8953 \
-    memtrack.msm8953 \
+    memtrack.msm8953
+
+PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system \
     libtinyxml
@@ -152,10 +162,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FMRadio \
     libfmjni
-
-# GPS
-PRODUCT_PACKAGES += \
-    libwifi-hal-ctrl
 
 # Health
 PRODUCT_PACKAGES += \
@@ -181,7 +187,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/msm8953-snd-card-mtp_Button_Jack.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/msm8953-snd-card-mtp_Button_Jack.kl
 
-# IPA Manager
+# IPACM
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
@@ -239,25 +245,24 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson
-
-# QTI
-PRODUCT_PACKAGES += \
+    libjson \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.msm.usb.configfs.rc \
     init.qcom.rc \
-    init.qcom.sh \
     init.qcom.usb.rc \
     init.target.rc \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
-    init.qcom.post_boot.sh
+    init.qcom.post_boot.sh \
+    init.qcom.sh \
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -327,6 +332,7 @@ PRODUCT_PACKAGES += \
     libcld80211 \
     libwpa_client \
     hostapd \
+    libwifi-hal-ctrl \
     wificond \
     wpa_supplicant \
     wpa_supplicant.conf
