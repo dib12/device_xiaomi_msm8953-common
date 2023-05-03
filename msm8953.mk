@@ -179,7 +179,8 @@ PRODUCT_PACKAGES += \
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common \
-    ims_ext_common.xml
+    ims_ext_common.xml \
+    vendor.qti.hardware.camera.device@1.0
 
 # HW crypto
 PRODUCT_PACKAGES += \
