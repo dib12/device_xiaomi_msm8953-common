@@ -262,7 +262,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
-    init.qcom.sh \
+    init.qcom.sh
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
