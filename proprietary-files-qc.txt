@@ -386,10 +386,6 @@ usr/keylayout/synaptics_dsx_v21.kl:vendor/usr/keylayout/synaptics_dsx_v21.kl
 usr/keylayout/uinput-fpc.kl:vendor/usr/keylayout/uinput-fpc.kl
 usr/keylayout/uinput-goodix.kl:vendor/usr/keylayout/uinput-goodix.kl
 
-# Keystore
-vendor/lib/hw/keystore.msm8953.so
-vendor/lib64/hw/keystore.msm8953.so
-
 # Latency
 product/framework/vendor.qti.hardware.data.latency-V1.0-java.jar
 product/framework/vendor.qti.latency-V2.0-java.jar
