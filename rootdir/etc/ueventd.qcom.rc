@@ -311,8 +311,15 @@ firmware_directories /vendor/firmware_mnt/image/
 # Ramdump devices
 /dev/ramdump*             0640   system     system
 
-# Fingerprint device
-/dev/qbt1000              0660   system     system
+# Fingerprint (goodix)
+/dev/goodix_fp                                            0644   system     system
+
+# Fingerprint (fpc)
+/sys/devices/platform/soc/soc:fpc1020 compatible_all      0640   system     system
+/sys/devices/platform/soc/soc:fpc1020 irq                 0660   system     system
+/sys/devices/platform/soc/soc:fpc1020 hw_reset            0660   system     system
+/sys/devices/platform/soc/soc:fpc1020 wakeup_enable       0660   system     system
+/sys/devices/platform/soc/soc:fpc1020 fingerdown_wait     0660   system     system
 
 #ImproveTouch device
 /dev/hbtp_input           0660   system     system
