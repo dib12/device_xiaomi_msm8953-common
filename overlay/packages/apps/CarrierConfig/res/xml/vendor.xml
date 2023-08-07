@@ -339,6 +339,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
 
+
     <carrier_config mcc="234" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -560,23 +561,20 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
 
     <carrier_config mcc="404">
-		<boolean name="carrier_volte_available_bool" value="true" />
-		<boolean name="carrier_vt_available_bool" value="true" />
-		<boolean name="editable_wfc_mode_bool" value="true" />
-	</carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
 
     <carrier_config mcc="405">
-		<boolean name="carrier_volte_available_bool" value="true" />
-		<boolean name="carrier_vt_available_bool" value="true" />
-		<boolean name="editable_wfc_mode_bool" value="true" />
-	</carrier_config>
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+    </carrier_config>
 
     <carrier_config mcc="405" mnc="840,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874">
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="editable_wfc_mode_bool" value="false" />
-        <boolean name="carrier_use_ims_first_for_emergency_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
-        <boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
         <boolean name="video_call_use_ext" value="false" />
         <boolean name="use_custom_video_ui" value="true" />
         <boolean name="config_hide_preview_in_vt_confcall" value="true" />
@@ -601,31 +599,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="config_retry_sms_over_ims" value="true"/>
         <boolean name="config_update_service_status" value="true"/>
         <boolean name="carrier_supports_multianchor_conference" value="true"/>
-        <boolean name="carrier_name_override_bool" value="false" />
-        <string name="carrier_name_string" />
     </carrier_config>
-
-    <carrier_config mcc="404" mnc="02,03,10,16,31,40,45,49,70,90,92,93,94,95,96,97,98">
-		<boolean name="carrier_volte_available_bool" value="true" />
-		<boolean name="carrier_vt_available_bool" value="true" />
-		<int name="carrier_default_wfc_ims_mode_int" value="2" />
-		<boolean name="editable_wfc_mode_bool" value="false" />
-		<boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
-		<string-array name="carrier_certificate_string_array" num="1">
-			<item value="1CEBC94A88A739178692209DE6E0A0802218B813" />
-		</string-array>
-	</carrier_config>
-
-    <carrier_config mcc="405" mnc="51,52,53,54,55,56">
-		<boolean name="carrier_volte_available_bool" value="true" />
-		<boolean name="carrier_vt_available_bool" value="true" />
-		<int name="carrier_default_wfc_ims_mode_int" value="2" />
-		<boolean name="editable_wfc_mode_bool" value="false" />
-		<boolean name="carrier_default_wfc_ims_enabled_bool" value="true" />
-		<string-array name="carrier_certificate_string_array" num="1">
-			<item value="1CEBC94A88A739178692209DE6E0A0802218B813" />
-		</string-array>
-	</carrier_config>
 
     <carrier_config mcc="440" mnc="10">
         <boolean name="carrier_volte_available_bool" value="true" />
