@@ -88,7 +88,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
-    audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default
 
