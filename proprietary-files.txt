@@ -64,12 +64,6 @@ vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libtinycompress_vendor.so
 
-# Audiosphere
-etc/permissions/audiosphere.xml
-framework/audiosphere.jar
-vendor/lib/soundfx/libasphere.so
-vendor/lib64/soundfx/libasphere.so
-
 # ANT+ (vendor)
 vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
