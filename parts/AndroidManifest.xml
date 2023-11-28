@@ -35,7 +35,9 @@
         android:label="@string/device_settings_app_name"
         android:persistent="true">
 
-        <receiver android:name=".BootCompletedReceiver">
+        <receiver
+            android:name=".BootCompletedReceiver"
+            android:exported="false">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <category android:name="android.intent.category.DEFAULT" />
@@ -47,12 +49,15 @@
             android:authorities="${applicationId}.androidx-startup"
             tools:replace="android:authorities"/>
 
-        <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
+        <service
+            android:name=".doze.DozeService"
+            android:exported="true"
+            android:permission="XiaomiDozeService">
         </service>
 
         <activity
             android:name=".doze.DozeSettingsActivity"
+            android:exported="false"
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
