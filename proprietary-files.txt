@@ -29,9 +29,6 @@ vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvadsp_skel.so
 
 # Audio
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
@@ -39,9 +36,6 @@ vendor/lib/libadiertac.so
 vendor/lib/libadm.so
 vendor/lib/libaudcal.so
 vendor/lib/libqtigef.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
