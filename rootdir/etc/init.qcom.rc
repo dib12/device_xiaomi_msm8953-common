@@ -105,10 +105,10 @@ on boot
     mkdir /dev/socket/qmux_radio 0770 radio radio
     chmod 2770 /dev/socket/qmux_radio
 
-    mkdir /persist/drm 0770 system system
+    mkdir /mnt/vendor/persist/drm 0770 system system
     mkdir /mnt/vendor/persist/bluetooth 0770 bluetooth bluetooth
-    mkdir /persist/misc 0770 system system
-    mkdir /persist/alarm 0770 system system
+    mkdir /mnt/vendor/persist/misc 0770 system system
+    mkdir /mnt/vendor/persist/alarm 0770 system system
     mkdir /mnt/vendor/persist/time 0770 system system
     mkdir /mnt/vendor/persist/secnvm 0770 system system
 
@@ -159,8 +159,6 @@ on boot
     chown system system /sys/class/backlight/panel0-backlight/max_brightness
 
     # Create directory used for display
-    # for backward compatibility
-    mkdir /persist/display 0770 system graphics
     mkdir /mnt/vendor/persist/display 0770 system graphics
 
     # Create hvdcp_opti directory
@@ -233,7 +231,7 @@ on post-fs-data
     mkdir /data/vendor/modem_config 0570 radio root
 
     # access permission for wlan
-    chown system system /persist/WCNSS_qcom_wlan_nv.bin
+    chown system system /mnt/vendor/persist/WCNSS_qcom_wlan_nv.bin
 
     # Create directories for Location services
     mkdir /data/vendor/location 0770 gps gps
