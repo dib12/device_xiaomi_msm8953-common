@@ -173,6 +173,7 @@ persist.timed.enable=true
 vendor.usb.rmnet.func.name=rmnet_bam
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=rndis_bam
+vendor.usb.dpl.inst.name=dpl
 
 # Watchdog
 ro.hw_timeout_multiplier=3
